@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+	 <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\JustinB\source\repos\Direct3D11Game\Build\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <Target Name="SetupForDemo" AfterTargets="Build">
+
+    <ItemGroup>
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).dll" />
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).pdb" />
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).runtimeconfig.json" />
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).deps.json" />
+    </ItemGroup>
+
+    <!-- Copy the project outputs to the demo directory -->
+    <Copy SourceFiles="@(AllOutputs)" DestinationFolder="$(BinRoot)/$(Configuration)" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\SharpDX3\Bin\Debug\netstandard1.1\SharpDX.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler">
+      <HintPath>..\..\..\SharpDX3\Bin\Debug\netstandard1.1\SharpDX.D3DCompiler.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>..\..\..\SharpDX3\Bin\Debug\netstandard1.1\SharpDX.Direct3D11.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D12">
+      <HintPath>..\..\..\SharpDX3\Bin\Debug\netstandard1.1\SharpDX.Direct3D12.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\..\..\SharpDX3\Bin\Debug\netstandard1.1\SharpDX.DXGI.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\..\Downloads\dotnet-sdk-3.1.107-win-x64\shared\Microsoft.WindowsDesktop.App\3.1.7\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>..\..\Build\CoreCLR\3.1.7\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\Downloads\dotnet-sdk-3.1.107-win-x64\shared\Microsoft.WindowsDesktop.App\3.1.7\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

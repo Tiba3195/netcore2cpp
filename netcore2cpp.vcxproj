@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{b1794eb9-e299-40bf-9b29-7a00a3d483ab}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>netcore2cpp</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="Generated.Managed.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="NetCoreLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="coreclr_delegates.h" />
+    <ClInclude Include="Generated.Managed.h" />
+    <ClInclude Include="Host.h" />
+    <ClInclude Include="hostfxr.h" />
+    <ClInclude Include="NetCoreLoader.h" />
+    <ClInclude Include="nethost.h" />
+    <ClInclude Include="StepTimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PiTop\AsyncIO.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\NaCl.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\netcoreapp3.1\DotNetLib.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\netcoreapp3.1\DotNetLib.runtimeconfig.json">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\NetMQ.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\PiTop.Abstractions.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\PiTop.Algorithms.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\PiTop.Camera.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\PiTop.Display.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\PiTop.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\Serilog.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\Serilog.Sinks.RollingFileAlternate.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\SharpDX.Mathematics.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\SharpDX.Mathematics.pdb">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\SixLabors.Fonts.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\SixLabors.ImageSharp.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\SixLabors.ImageSharp.Drawing.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\System.Device.Gpio.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\System.Reactive.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="PiTop\System.ServiceModel.Primitives.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <PreBuildEvent>
+      <Command>$(ProjectDir)ReflectionDataBuilder\bin\Debug\ReflectionDataBuilder.exe $(ProjectDir) </Command>
+    </PreBuildEvent>
+    <Link>
+      <UnresolvedSymbolReferences>false</UnresolvedSymbolReferences>
+    </Link>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/local/lib/;%(Link.AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>-pthread -ldl %(AdditionalOptions)</AdditionalOptions>
+      <SharedLibrarySearchPath>/usr/local/lib;%(Link.SharedLibrarySearchPath)</SharedLibrarySearchPath>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>_LINUX</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Link>
+      <SharedLibrarySearchPath>/usr/local/lib;%(Link.SharedLibrarySearchPath)</SharedLibrarySearchPath>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Link>
+      <AdditionalLibraryDirectories>/usr/local/lib/;%(Link.AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

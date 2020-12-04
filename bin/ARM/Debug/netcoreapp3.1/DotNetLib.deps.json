@@ -1,0 +1,263 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DotNetLib/1.0.0": {
+        "dependencies": {
+          "AsyncIO": "0.1.69.0",
+          "NaCl": "0.1.13.0",
+          "NetMQ": "4.0.1.6",
+          "PiTop.Abstractions": "1.0.0.0",
+          "PiTop.Algorithms": "1.0.0.0",
+          "PiTop.Camera": "1.0.0.0",
+          "PiTop.Display": "1.0.0.0",
+          "PiTop": "1.0.0.0",
+          "Serilog": "2.0.0.0",
+          "Serilog.Sinks.RollingFileAlternate": "2.0.0.0",
+          "SharpDX.Mathematics": "4.2.0.0",
+          "SixLabors.Fonts": "1.0.0.0",
+          "SixLabors.ImageSharp": "1.0.0.0",
+          "SixLabors.ImageSharp.Drawing": "1.0.0.0",
+          "System.Device.Gpio": "1.1.0.0",
+          "System.Reactive": "4.3.0.0",
+          "System.ServiceModel.Primitives": "4.2.0.0"
+        },
+        "runtime": {
+          "DotNetLib.dll": {}
+        }
+      },
+      "AsyncIO/0.1.69.0": {
+        "runtime": {
+          "AsyncIO.dll": {
+            "assemblyVersion": "0.1.69.0",
+            "fileVersion": "0.1.69.0"
+          }
+        }
+      },
+      "NaCl/0.1.13.0": {
+        "runtime": {
+          "NaCl.dll": {
+            "assemblyVersion": "0.1.13.0",
+            "fileVersion": "0.1.13.0"
+          }
+        }
+      },
+      "NetMQ/4.0.1.6": {
+        "runtime": {
+          "NetMQ.dll": {
+            "assemblyVersion": "4.0.1.6",
+            "fileVersion": "4.0.1.6"
+          }
+        }
+      },
+      "PiTop.Abstractions/1.0.0.0": {
+        "runtime": {
+          "PiTop.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PiTop.Algorithms/1.0.0.0": {
+        "runtime": {
+          "PiTop.Algorithms.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PiTop.Camera/1.0.0.0": {
+        "runtime": {
+          "PiTop.Camera.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PiTop.Display/1.0.0.0": {
+        "runtime": {
+          "PiTop.Display.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PiTop/1.0.0.0": {
+        "runtime": {
+          "PiTop.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Serilog/2.0.0.0": {
+        "runtime": {
+          "Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.RollingFileAlternate/2.0.0.0": {
+        "runtime": {
+          "Serilog.Sinks.RollingFileAlternate.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "SharpDX.Mathematics/4.2.0.0": {
+        "runtime": {
+          "SharpDX.Mathematics.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.1.33"
+          }
+        }
+      },
+      "SixLabors.Fonts/1.0.0.0": {
+        "runtime": {
+          "SixLabors.Fonts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/1.0.0.0": {
+        "runtime": {
+          "SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/1.0.0.0": {
+        "runtime": {
+          "SixLabors.ImageSharp.Drawing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Device.Gpio/1.1.0.0": {
+        "runtime": {
+          "System.Device.Gpio.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.100.20.52302"
+          }
+        }
+      },
+      "System.Reactive/4.3.0.0": {
+        "runtime": {
+          "System.Reactive.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.2.55399"
+          }
+        }
+      },
+      "System.ServiceModel.Primitives/4.2.0.0": {
+        "runtime": {
+          "System.ServiceModel.Primitives.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.6.25525.6"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotNetLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AsyncIO/0.1.69.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NaCl/0.1.13.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetMQ/4.0.1.6": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PiTop.Abstractions/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PiTop.Algorithms/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PiTop.Camera/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PiTop.Display/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PiTop/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Serilog/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Serilog.Sinks.RollingFileAlternate/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpDX.Mathematics/4.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SixLabors.Fonts/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SixLabors.ImageSharp/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SixLabors.ImageSharp.Drawing/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Device.Gpio/1.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reactive/4.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ServiceModel.Primitives/4.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

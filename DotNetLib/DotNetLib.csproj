@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\PiTop</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>TRACE;RUNTIMEMODE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <Target Name="SetupForDemo" AfterTargets="Build">
+
+    <ItemGroup>
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).dll" />
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).pdb" />
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).runtimeconfig.json" />
+      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).deps.json" />
+    </ItemGroup>
+
+    <!-- Copy the project outputs to the demo directory -->
+    <Copy SourceFiles="@(AllOutputs)" DestinationFolder="$(BinRoot)/$(Configuration)" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="AsyncIO">
+      <HintPath>..\PiTop\AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="NaCl">
+      <HintPath>..\PiTop\NaCl.dll</HintPath>
+    </Reference>
+    <Reference Include="NetMQ">
+      <HintPath>..\PiTop\NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="PiTop">
+      <HintPath>..\PiTop\PiTop.dll</HintPath>
+    </Reference>
+    <Reference Include="PiTop.Abstractions">
+      <HintPath>..\PiTop\PiTop.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PiTop.Algorithms">
+      <HintPath>..\PiTop\PiTop.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="PiTop.Camera">
+      <HintPath>..\PiTop\PiTop.Camera.dll</HintPath>
+    </Reference>
+    <Reference Include="PiTop.Display">
+      <HintPath>..\PiTop\PiTop.Display.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>..\PiTop\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.RollingFileAlternate">
+      <HintPath>..\PiTop\Serilog.Sinks.RollingFileAlternate.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>..\PiTop\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.Fonts">
+      <HintPath>..\PiTop\SixLabors.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.ImageSharp">
+      <HintPath>..\PiTop\SixLabors.ImageSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.ImageSharp.Drawing">
+      <HintPath>..\PiTop\SixLabors.ImageSharp.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Device.Gpio">
+      <HintPath>..\PiTop\System.Device.Gpio.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>..\PiTop\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>..\PiTop\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+
+</Project>

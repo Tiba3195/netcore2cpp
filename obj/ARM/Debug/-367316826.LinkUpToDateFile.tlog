@@ -1,0 +1,1 @@
+g++ -o "/home/pi/projects/netcore2cpp/bin/ARM/Debug/netcore2cpp.out" -Wl,-rpath-link=/usr/local/lib -Wl,-L/usr/local/lib/ -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -pthread -ldl /home/pi/projects/netcore2cpp/obj/ARM/Debug/Generated.Managed.o /home/pi/projects/netcore2cpp/obj/ARM/Debug/main.o /home/pi/projects/netcore2cpp/obj/ARM/Debug/NetCoreLoader.o

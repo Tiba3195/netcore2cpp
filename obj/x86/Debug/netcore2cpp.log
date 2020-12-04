@@ -1,0 +1,4 @@
+﻿  Cleaning remote project directory
+  Validating sources
+  Copying sources remotely to '192.168.0.15'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Application Type\Linux\1.0\Linux.targets(240,5): error : Cannot copy file 'C:\Users\JustinB\source\repos\Tiba3195\netcore2cpp\netcore2cpp\NetCoreLoader.cpp' remotely to '/home/pi/projects/netcore2cpp/NetCoreLoader.cpp'

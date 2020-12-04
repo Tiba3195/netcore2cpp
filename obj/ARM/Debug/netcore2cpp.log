@@ -1,0 +1,31 @@
+﻿  new FPiTop
+  Validating sources
+  Copying sources remotely to '192.168.0.15'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  Generated.Managed.cpp
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\Generated.Managed.cpp(62,9): warning : variable ‘rc’ set but not used [-Wunused-but-set-variable]
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\Generated.Managed.cpp(62,9): warning :      int rc = 0;
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\Generated.Managed.cpp(62,9): warning :          ^~
+  main.cpp
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(63,43): warning : conversion from ‘uint64_t’ {aka ‘long long unsigned int’} to ‘long unsigned int’ may change value [-Wconversion]
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(63,43): warning :     m_qpcFrequency = performanceFrequencyEX();
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(63,43): warning :                      ~~~~~~~~~~~~~~~~~~~~~~^~
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(64,40): warning : conversion from ‘uint64_t’ {aka ‘long long unsigned int’} to ‘long unsigned int’ may change value [-Wconversion]
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(64,40): warning :     m_qpcLastTime = performanceCounterEX();
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(64,40): warning :                     ~~~~~~~~~~~~~~~~~~~~^~
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(118,40): warning : conversion from ‘uint64_t’ {aka ‘long long unsigned int’} to ‘long unsigned int’ may change value [-Wconversion]
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(118,40): warning :     m_qpcLastTime = performanceCounterEX();
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(118,40): warning :                     ~~~~~~~~~~~~~~~~~~~~^~
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\main.cpp(17,46): warning : conversion from ‘double’ to ‘float’ may change value [-Wfloat-conversion]
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\main.cpp(17,46): warning :     m_PiTop->Tick(m_gameTime.GetElapsedSeconds());
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\main.cpp(17,46): warning :                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(143,38): warning : conversion from ‘uint64_t’ {aka ‘long long unsigned int’} to ‘long unsigned int’ may change value [-Wconversion]
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(143,38): warning :     currentTime = performanceCounterEX();
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\StepTimer.h(143,38): warning :                   ~~~~~~~~~~~~~~~~~~~~^~
+  NetCoreLoader.cpp
+C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\NetCoreLoader.cpp(234,8): warning : ‘void* {anonymous}::load_library(std::__cxx11::string)’ declared ‘static’ but never defined [-Wunused-function]
+  Linking objects
+  netcore2cpp.vcxproj -> C:\Users\JustinB\source\repos\Tiba3195\netcoreTools\bin\ARM\Debug\netcore2cpp.out
