@@ -12,6 +12,7 @@ ReflectionDataBuilder = Pre build step, uses reflection to build c++ header/code
 
 netcore2cpp = Sample app showing how to setup netcore hosting.
 
+FClassBuilder.vb = native code generator.
 
 Some hard coded pathers are aroudn the place:
 
@@ -21,3 +22,10 @@ string message = "/home/pi/projects/netcore2cpp/PiTop";
 string_t root_path = "/home/pi/projects/netcore2cpp/PiTop/netcoreapp3.1/";
 
 Project file is a bit of a pain so things may get a little messed up, thats why i have included all the .dlls and build artifacts for now.
+
+If you want the code gen to export a managed method it needs to be static and provide a delegate with the samename#delegate and params, the method must also be decorated with [NativeExpose] so that we dont end up with un-wanted methods getting exported, return types are a bit of a pain but can be done and most primitvie types are supported.
+
+ public delegate void TickDelegate(float delta);
+ [NativeExpose]
+ public static void Tick(float delta);
+        
