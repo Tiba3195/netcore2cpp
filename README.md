@@ -14,6 +14,9 @@ netcore2cpp = Sample app showing how to setup netcore hosting.
 
 FClassBuilder.vb = native code generator.
 
+The current pre build step just passes in the current project folder and calls the generator. This is the output folder where the generated files will end up.
+$(ProjectDir)ReflectionDataBuilder\bin\Debug\ReflectionDataBuilder.exe $(ProjectDir) 
+
 # Some hard coded pathers are aroudn the place:
 
 
