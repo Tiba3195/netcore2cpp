@@ -17,7 +17,7 @@ FClassBuilder.vb = native code generator.
 The current pre build step just passes in the current project folder and calls the generator. This is the output folder where the generated files will end up.
 $(ProjectDir)ReflectionDataBuilder\bin\Debug\ReflectionDataBuilder.exe $(ProjectDir) 
 
-# Some hard coded pathers are aroudn the place:
+# Some hard coded pathers are around the place:
 
 
 public static string Path = "/home/pi/pi-top-4-.NET-SDK/";
